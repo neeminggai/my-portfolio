@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pattaraporn Boonpen — Junior UX/UI Analyst & Web Developer based in Darwin, Australia. Specialising in human-centred design and front-end development.">
+    <title>Pattaraporn Boonpen — Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="assets/img/my-pic.JPG">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Side Menu -->
+    <div class="nav-menu" id="navMenu">
+        <button class="nav-close" id="navClose" aria-label="Close menu">&times;</button>
+        <ul>
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </div>
+    <div class="nav-overlay" id="navOverlay" onclick="closeMenu()"></div>
+
+    <!-- This is a first portfolio page -->
+    <section class="bg-1" id="home">
+        <div class="hero-content">
+            <div class="hero-photo-wrap">
+                <img src="assets/img/my-pic.JPG" alt="Pattaraporn Boonpen" class="hero-photo">
+            </div>
+            <div class="hero-text">
+                <h1>My Portfolio</h1>
+                <p>Welcome to my portfolio! Here you can find some of my projects and accomplishments.</p>
+                <p>I'm Pattaraporn Boonpen Junior UXUI Analyst & Junior Web Developer</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- This is second page -->
+    <section id="about" class="bg-2">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p class="about-bio">Hi, I'm Pattaraporn Boonpen &nbsp;Junior UX/UI Analyst &amp; Junior Web Developer Engineering graduate from KMITL with a background in research and data analysis. After completing a Web Dev Bootcamp with UNSW, I found my passion for creating digital experiences that are intuitive and human-centred.</p>
+            <ul class="about-list">
+                <li>Thai · English · Mandarin Chinese</li>
+                <li>Darwin, Australia</li>
+                <li>Full working rights</li>
+                <li>Research Analysis</li>
+                <li>HTML · CSS · JavaScript</li>
+                <li>Figma </li>
+                <li>Microsoft Office</li>
+            </ul>
+            <a href="assets/img/Pattaraporn_UX_Analyst.pdf" class="cv-btn" download="Pattaraporn_UX_Analyst.pdf">Download CV</a>
+        </div>
+    </section>
+
+    <!-- This is Third page -->
+    <section id="skills" class="bg-1">
+        <h2 class="skills-heading">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-col">
+                <div class="skill-label">UX/UI Skills</div>
+                <div class="skill-card">
+                    <ul>
+                        <li>User Research</li>
+                        <li>Wireframing &amp; Prototyping</li>
+                        <li>Usability Testing</li>
+                        <li>Accessibility &amp; WCAG</li>
+                        <li>Information Architecture</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-col">
+                <div class="skill-label">Web Development</div>
+                <div class="skill-card">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Responsive Design</li>
+                        <li>MongoDB</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-col">
+                <div class="skill-label">Tools</div>
+                <div class="skill-card">
+                    <ul>
+                        <li>Figma</li>
+                        <li>Canva</li>
+                        <li>Microsoft Office</li>
+                        <li>VS Code</li>
+                        <li>Git / GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- This is Fourth page -->
+    <section id="projects" class="bg-1">
+        <h2 class="projects-heading">Projects</h2>
+        <div class="carousel">
+            <div class="carousel-track" id="carouselTrack">
+
+                <div class="carousel-slide">
+                    <img src="assets/img/cake-website.png" alt="Delizia Cake Shop">
+                    <div class="carousel-text">
+                        <h3>Delizia — Cake Bakery Website</h3>
+                        <p>A one-page website for a cake shop. Built with HTML, CSS, and JavaScript.</p>
+                        <ul class="todo-features">
+                            <li>🎂 Home — slideshow with an "Explore Cakes" button</li>
+                            <li>📖 About — a short story about the bakery</li>
+                            <li>🍰 Products — tabbed by flavour (Vanilla, Strawberry, Chocolate…)</li>
+                            <li>✨ New Arrivals — latest cakes with prices</li>
+                            <li>📬 Contact — address, phone, email &amp; message form</li>
+                        </ul>
+                        <span class="project-tech">HTML · CSS · JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/img/maintenance-app.png" alt="Maintenance Management App">
+                    <div class="carousel-text">
+                        <h3>Maintenance Management App</h3>
+                        <p>A website to manage maintenance jobs. You can add jobs, update them, and track their status.</p>
+                        <span class="project-tech">HTML · CSS · JavaScript · MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/img/pages.png" alt="iTunes Explorer">
+                    <div class="carousel-text">
+                        <h3>iTunes Explorer</h3>
+                        <p>A full-stack web application for searching the iTunes catalogue. It lets users find music, movies, podcasts, audiobooks, TV shows, and more — and save their favourites for the session.</p>
+                        <span class="project-tech">React · iTunes API</span>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/img/fakebook.png" alt="Fakebook">
+                    <div class="carousel-text">
+                        <h3>Fakebook</h3>
+                        <p>A social media web app inspired by Facebook, featuring user authentication via Facebook Login API, personalised profiles, and a scrollable post feed. Focused on component-based architecture and real-world API integration using React.</p>
+                        <span class="project-tech">React · Facebook Login API</span>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/img/event-plan.png" alt="Event Planner">
+                    <div class="carousel-text">
+                        <h3>Event Planner</h3>
+                        <p>A personal event management app where users can create, edit, and delete events with date and detail tracking. Data is persisted using MongoDB, making it a practical tool for organising schedules and reminders.</p>
+                        <span class="project-tech">HTML · CSS · JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/img/todo-list.png" alt="Todo App">
+                    <div class="carousel-text">
+                        <h3>Todo App</h3>
+                        <p>A simple Todo app with login system built with React.</p>
+                        <ul class="todo-features">
+                            <li>🔐 Sign In / Register</li>
+                            <li>➕ Add new tasks</li>
+                            <li>✅ Mark tasks as done</li>
+                            <li>🗑️ Delete tasks</li>
+                        </ul>
+                        <span class="project-tech">React · MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/img/cafe-club.png" alt="Cafe Club">
+                    <div class="carousel-text">
+                        <h3>Cafe Club</h3>
+                        <p>A responsive cafe website designed in Figma before being built in code. Features a warm visual style, product menu grid, and smooth layout across devices. The project highlights the end-to-end process from UX design to front-end development.</p>
+                        <span class="project-tech">HTML · CSS · JavaScript · Figma</span>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-btn prev" id="prevBtn">&#8592;</button>
+            <button class="carousel-btn next" id="nextBtn">&#8594;</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- This is Fifth page -->
+    <section id="contact" class="bg-2">
+        <div class="contact-content">
+            <h1>Contact Me</h1>
+            <p class="contact-sub">Feel free to reach out to me for any inquiries or collaborations</p>
+            <ul class="contact-list">
+                <li><span>Email</span><a href="mailto:ming45015@gmail.com">ming45015@gmail.com</a></li>
+                <li><span>Phone</span><a href="tel:0452091240">0452 091 240</a></li>
+                <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/pattaraporn-boonpen/">pattaraporn-boonpen</a></li>
+                <li><span>GitHub</span><a href="https://github.com/neeminggai">neeminggai</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>© 2025 Pattaraporn Boonpen. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
